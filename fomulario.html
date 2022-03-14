@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro</h1>
+        <p>Complete seus dados:</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="Nome">
+            </div>
+
+            <div>
+                <label>Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label>Gênero: </label>
+                <label>
+                    <input type="radio" name="genero" value="masculino" checked>Masculino
+
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="feminino">Feminino
+                    
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="outros">Outros
+                    
+                </label>
+            </div>
+
+            <div>
+                <label>Escolaridade: </label>
+                <select id="escolaridade">
+                    <option selected disabled value="">Selecionar</option>
+                    <option>Não Alfabetizado</option>
+                    <option>Alfabetizado</option>
+                    <option>1° Grau Incompleto</option>
+                    <option>1° Grau Completo</option>
+                    <option>2° Grau Incompleto</option>
+                    <option>2° Grau Completo</option>
+                    <option>Superior Incompleto</option>
+                    <option>Superior Completo</option>
+                
+                </select>
+            </div>
+            <fieldset>
+                <div>
+                    <label>Selecione as áreas de interesse: </label><br>
+                    <input type="checkbox" id="selecione1" name="selecione1" value="Administração">
+                    <label for="selecione1">Administração</label><br>
+                    <input type="checkbox" id="selecione2" name="selecione2" value="Negócios">
+                    <label for="selecione2">Negócios</label><br>
+                    <input type="checkbox" id="selecione3" name="selecione3" value="Saúde">
+                    <label for="selecione3">Saúde</label><br>
+                    <input type="checkbox" id="selecione4" name="selecione4" value="Tecnologia">
+                    <label for="selecione4">Tecnologia</label><br>                    
+                </div>
+            </fieldset>
+                <div>
+                    <label for="menssagem">Deixe sua mensagem</label><br>
+                    <textarea row="10" col="5000" style width= 26em id="menssagem" name="menssagem"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+
+
+            
+                
+        
+    </form>
+</body>
+</html>
