@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div>
-        <h1>Cadastro</h1>
-        <p>Complete seus dados:</p>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Complete seus dados:</p>
         <br>
     </div>
-
+   
     <form>
-        <fieldset>
-            <div>
-                <label>Nome:</label>
-                <input type="text" name="nome" id="Nome">
-            </div>
-
-            <div>
-                <label>Sobrenome:</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong></strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="sobrenome" class="campo"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" id="email">
+            <div class="campo">
+                <label><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required>
             </div>
 
             <div>
-                <label>Gênero: </label>
+                <label><strong>Gênero: </strong></label>
                 <label>
                     <input type="radio" name="genero" value="masculino" checked>Masculino
 
@@ -47,7 +45,7 @@
             </div>
 
             <div>
-                <label>Escolaridade: </label>
+                <label><strong>Escolaridade: </strong></label>
                 <select id="escolaridade">
                     <option selected disabled value="">Selecionar</option>
                     <option>Não Alfabetizado</option>
@@ -63,7 +61,7 @@
             </div>
             <fieldset>
                 <div>
-                    <label>Selecione as áreas de interesse: </label><br>
+                    <label><strong>Selecione as áreas de interesse: </strong></label><br>
                     <input type="checkbox" id="selecione1" name="selecione1" value="Administração">
                     <label for="selecione1">Administração</label><br>
                     <input type="checkbox" id="selecione2" name="selecione2" value="Negócios">
@@ -75,8 +73,8 @@
                 </div>
             </fieldset>
                 <div>
-                    <label for="menssagem">Deixe sua mensagem</label><br>
-                    <textarea row="10" col="5000" style width= 26em id="menssagem" name="menssagem"></textarea>
+                    <label for="menssagem"><strong>Deixe sua mensagem</strong></label>
+                    <textarea id="menssagem" name="menssagem"></textarea>
                 </div>
 
                 <button type="submit">Enviar</button>
